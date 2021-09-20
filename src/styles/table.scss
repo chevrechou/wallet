@@ -1,0 +1,9 @@
+.MuiTableContainer-root {
+  &.table_container {
+    width: 400px;
+    height: auto;
+    border: 2px solid rgba(45, 52, 255, 0.598);
+    padding: 12px 20px;
+    border-radius: 20px;
+  }
+}

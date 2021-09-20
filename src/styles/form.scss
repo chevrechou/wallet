@@ -1,0 +1,21 @@
+.MuiFormControl-root {
+  padding: 0px 0px 20px 0px !important;
+}
+.MuiFormControl-root {
+  &.form_control {
+    &--input {
+      min-width: 100%;
+      > .MuiFormHelperText-contained {
+        margin-left: 0px;
+      }
+    }
+  }
+  &.form_control__multiline {
+    min-width: 100%;
+  }
+}
+.MuiFormGroup-root {
+  &.form_control {
+    display: inline;
+  }
+}
