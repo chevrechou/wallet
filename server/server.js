@@ -2,11 +2,12 @@ let express = require("express");
 let mongoose = require("mongoose");
 let cors = require("cors");
 let bodyParser = require("body-parser");
-let database = require("./database/db");
+var dotenv = require("dotenv");
+dotenv.config();
 
 const userRoute = require("../server/routes/userRoutes");
-const uri =
-  "mongodb+srv://admin:0BcyFxgE7AudozgY@bud--cluster.c9vdh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri =process.env.MONGOLAB_URI;
+
 
 mongoose.Promise = global.Promise;
 mongoose
